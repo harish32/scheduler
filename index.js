@@ -1,5 +1,5 @@
-const dotenv = require("dotenv");
-dotenv.config({ path: "./config/config.env" });
+// const dotenv = require("dotenv");
+// dotenv.config({ path: "./config/config.env" });
 const express = require("express");
 const app = require("express")();
 const server = app.listen(process.env.PORT);
