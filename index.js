@@ -9,7 +9,7 @@ const connectdb = require("./config/db");
 const users = require("./routes/user");
 const batches = require("./routes/batches");
 const schedules = require("./routes/schedule");
-const cors = require("cors");
+// const cors = require("cors");
 const auth = require("./routes/auth");
 const cookieParser = require("cookie-parser");
 const error = require("./middleware/error");
@@ -17,12 +17,12 @@ const error = require("./middleware/error");
 
 app.use(cookieParser());
 
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true
-  })
-);
+// app.use(
+//   cors({
+//     origin: "http://localhost:3000",
+//     credentials: true
+//   })
+// );
 connectdb();
 app.use(express.json());
 
