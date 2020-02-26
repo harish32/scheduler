@@ -13,6 +13,7 @@ const schedules = require("./routes/schedule");
 const auth = require("./routes/auth");
 const cookieParser = require("cookie-parser");
 const error = require("./middleware/error");
+const path = require("path");
 // const User = require("./models/user");
 
 app.use(cookieParser());
