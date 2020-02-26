@@ -7,8 +7,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"node index.js\" \"cd client && npm start\"  ",
-    "dev-start": "nodemon index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev-start": "nodemon index.js"
   },
   "author": "harish",
   "license": "ISC",
